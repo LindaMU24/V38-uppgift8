@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    background: rgb(212, 212, 212);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+article.card {
+    width: 350px;
+    height: 520px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    border-radius: .25rem;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 2rem rgba(0,0,0,.1);
+    color: black;
+    position: relative;
+}
+
+.top-left, .bottom-right {
+    position: absolute;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.top-left {
+    top: 15px;
+    left: 15px;
+}
+
+.center {
+    font-size: 5rem;
+}
+
+.bottom-right {
+    bottom: 15px;
+    right: 15px;
+    transform: rotate(180deg);
+}
+.rank {
+    margin-bottom: -5px; /* Justera detta efter behov */
+    position: relative;
+}
+
+.suit {
+    position: relative;
+    top: -5px; /* Justera detta värde för att placera klövern ovanför A */
+    font-size: 2.5rem; /* Justera storleken om det behövs */
+}
